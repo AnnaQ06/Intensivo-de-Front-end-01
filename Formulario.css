@@ -1,0 +1,96 @@
+body{
+    background-color: black;
+}
+
+fieldset {
+    background-color: #0f172a;
+    border: 2px solid #334155;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+legend {
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #1e293b;
+    padding: 8px 18px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #162032;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    border-color: #00a2ff;
+    box-shadow: 0 0 10px rgba(0, 162, 255, 0.3);
+}
+
+input:invalid {
+    border-color: #ff4655;
+}
+
+.error-mgs {
+    display: none;
+    color: #ff4655;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+form:invalid input:invalid ~ .error-mgs,
+input:not(:placeholder-shown):invalid ~ .error-mgs {
+    display: block;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #ff4655;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ff4655;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(255, 70, 85, 0.3);
+}
+
+button[type="submit"]:hover {
+    background-color: #e03745;
+    border-color: #e03745;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 70, 85, 0.4);
+}

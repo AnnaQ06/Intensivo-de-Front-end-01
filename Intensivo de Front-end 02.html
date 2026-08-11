@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+    <form action="Intensivo de Front-end 01.html" method="post">
+        <fieldset>
+            <legend>Adicione os dados</legend>
+
+            <div>
+                <label for="Nome">Nome: </label>
+                <input type="text" id="Nome" name="Nome" pattern="[A-Za-zÀ-ÿ\s]+" placeholder="Seu nome completo" required>
+                <span class="error-mgs">Digite um Nome!</span>
+            </div>
+            
+            <div> 
+                <label for="Email">E-mail: </label>
+                <input type="text" id="Email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="exemplo@email.com" required>
+                <span class="error-mgs">Digite um E-mail valído!</span>
+            </div>
+
+            <div>
+                <label for="Senha">Senha:</label>
+                <input type="password" id="Senha" name="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Mínimo 6 caracteres, 1 maiúscula, 1 número" required>
+                <span class="error-mgs">Digite uma senha!</span>
+            </div>
+        
+         </fieldset>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+</body>
+</html>
